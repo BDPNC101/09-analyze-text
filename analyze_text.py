@@ -8,8 +8,9 @@ def analyze_text(text):
             n += 1
         else:
             pass
-#convert to percentage value
-    e_p = str(round(n / e_n, 2))
+#convert to percentage
+    e_p = 100 * n / e_n
+    str(round(e_p, 2))
 #return
     string = "The text contains " + str(n) + " alphabetic characters, of which " + str(e_n) + " (" + str(e_p) + "%) are 'e'."
     return string
